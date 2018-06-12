@@ -15,7 +15,7 @@ public class SEARunner {
 		
 		
 		String workingDir = System.getProperty("user.dir");
-		workingDir += "\\DatabaseFolder\\allDrug.csv";
+		workingDir += "/DatabaseFolder/allDrug.csv";
 		
 		DrugDatabase drugDatabase = new DrugDatabase();
 		
@@ -24,6 +24,8 @@ public class SEARunner {
 		
 		
 		SEA newSEA = new SEA(querySMILES);
+		newSEA.Calculate_Raw_Score(newList);
+		newSEA.Calculate_Z_Score();
 		
 	}
 }

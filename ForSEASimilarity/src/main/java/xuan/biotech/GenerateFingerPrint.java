@@ -15,8 +15,6 @@ import org.openscience.cdk.smiles.SmilesParser;
 public class GenerateFingerPrint {
 
 	
-	
-	
 	public IBitFingerprint getCDKFingerPrint(String SMILES) throws CDKException {
 		
 		
@@ -31,7 +29,7 @@ public class GenerateFingerPrint {
 		properties.put("SMILES", SMILES);
 		container_1.addProperties(properties);
 		
-		IFingerprinter fingerprinter = new Fingerprinter();
+		Fingerprinter fingerprinter = new Fingerprinter();
 		IBitFingerprint fingerprint_1 = fingerprinter.getBitFingerprint(container_1);
 		
 		return fingerprint_1;
