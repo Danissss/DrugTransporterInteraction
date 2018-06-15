@@ -124,9 +124,7 @@ public class SEA {
 	
 	// take this.SMILES_Z_Score to convert to E-value
 	public  HashMap<String,Float> Calculate_E_value() {
-		//for each compound, get SMILES => IAtomContainer => Fingerprinter
-		//calculate the raw_score, then, return all the raw score (highest rank can
-		//be determined at E-value 
+
 		
 		
 		
