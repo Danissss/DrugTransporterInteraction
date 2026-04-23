@@ -1,1 +1,38 @@
+# Maven build directory
 /target/
+
+# Compiled Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Temporary project-specific folders
+forTempFile/
+*/forTempFile/
+
+# Weka / model artifacts (binary models)
+*.model
